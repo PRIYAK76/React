@@ -1,0 +1,6 @@
+
+//react creates a virtual DOM in memory
+
+DOM --> document object model
+
+react is JS library used for creating UI 
