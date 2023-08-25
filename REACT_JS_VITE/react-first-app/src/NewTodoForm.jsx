@@ -13,8 +13,6 @@ export function NewTodoForm({onSubmit}){
         setNewItem("")
       }
 
-
-
     return (
         <form className="new-item-form" onSubmit={handleSubmit}>
         <div className="form-row p-3 ">
