@@ -79,3 +79,46 @@ export default App;
 
 
 
+ 	INCREMENT AND DECREMENT PROGRAMS 
+
+import './App.css';
+import {useState} from "react";
+
+function App() {
+  const [count,setCount]=useState(0);
+
+  const inc=(()=>{
+    setCount(count+1);
+  });
+  const dec=(()=>{
+    setCount(count-1);
+  });
+  const setzero=(()=>{
+    setCount(0);
+  });
+
+  return (
+    <div className="App">
+      <button onClick={inc}>Increase</button>
+      <button onClick={dec}>Decrease</button>
+      <button onClick={setzero}>Set to zero</button>
+
+      {count}
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+const handleChange =((event)=>{
+    setNewTask(event.target.value);
+  })
+=> this will change the current input to present 
+
+
+
+whwnever there is a parameter inside a onclick function then we have to do like 
+<button onclick={()=>deleteTask(task)}>Delete</button> 
