@@ -18,3 +18,64 @@ select Javascript
 cd to the created name
 then inside the created folder give npm install 
 then npm run dev
+
+
+
+using props
+
+
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <Job salary={500000} pos="Senior SD" company="amazon"/>
+      <Job salary={90000} pos="junior SD" company="google"/>
+      <Job salary={60000} pos="Manager" company="wipro"/>
+    </div>
+  );
+}
+
+const Job =(props)=>{   //component name must be of capital letter
+  return(
+    <div>
+      <h1>{props.salary}</h1>
+      <h1>{props.company}</h1>
+    </div>
+  )
+}
+export default App;
+
+
+
+importing normal files like import './App.css';
+but when importing modules is like
+import styles from "./App.module.css";
+and use it like className={styles.App}
+
+
+
+    USESTATE PROGRAMS
+
+import './App.css';
+import {useState} from "react";
+
+function App() {
+  const [textColor,setTextcolor]=useState("black");
+  const [val,setVal]=useState(1);
+  const [show,setShow]=useState(false);
+  return (
+    <div className="App">
+      <button onClick={()=>{setTextcolor(textColor==="black"?"red":"black");
+        setVal(val+1); setShow(!show)}}>
+        Show / Hide
+      </button>
+      {show && <h1 style={{color:textColor}}>hi im priya +{val}</h1>}
+    </div>
+  );
+}
+
+export default App;
+
+
+
