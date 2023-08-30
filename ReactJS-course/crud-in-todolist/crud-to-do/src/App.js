@@ -4,7 +4,7 @@ import  {Task} from './Task';
 function App() {
   const [todoList,setTodoList] = useState([]);
   const [newTask,setNewTask] = useState();
-
+  
   const handleChange =((event)=>{
     setNewTask(event.target.value);
   })
@@ -29,7 +29,7 @@ function App() {
       <div className="list">
         {todoList.map((task)=>{
           return (
-            <Task taskName={task.taskName} id={task.id} deleteTask={deleteTask}/>
+            <Task taskName={task.taskName} id={task.id} deleteTask={deleteTask} />
           )
         })}
       </div>
