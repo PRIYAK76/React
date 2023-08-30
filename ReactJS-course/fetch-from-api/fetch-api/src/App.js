@@ -8,15 +8,19 @@ function App() {
     // });
 
     const [catFact,setCatFact]=useState("");
-    useEffect(()=>{
-       Axios.get("https://catfact.ninja/fact").then((res)=>{
+
+    const fetching=()=>{
+      Axios.get("https://catfact.ninja/fact").then((res)=>{
       setCatFact(res.data.fact);
-    })
+    });
+    }
+    useEffect(()=>{
+      fetching();
     },[]);
    
   return (
     <div className="App">
-      <button>Generate cat Fact</button>
+      <button onClick={fetching}>Generate cat Fact</button>
       <p>{catFact}</p>
     </div>
   );

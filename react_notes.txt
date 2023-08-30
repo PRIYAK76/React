@@ -120,5 +120,11 @@ const handleChange =((event)=>{
 
 
 
-whwnever there is a parameter inside a onclick function then we have to do like 
+whenever there is a parameter inside a onclick function then we have to do like 
 <button onclick={()=>deleteTask(task)}>Delete</button> 
+
+
+fetching data from API
+  fetch("https://catfact.ninja/fact").then((res) => res.json()).then((data)=>{
+  console.log(data);
+});
