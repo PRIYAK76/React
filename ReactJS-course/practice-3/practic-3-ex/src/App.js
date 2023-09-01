@@ -1,5 +1,5 @@
 import './App.css';
-import {useEffect,useState} from "react";
+import {useState} from "react";
 import Axios from "axios";
 
 function App() {
@@ -10,6 +10,9 @@ function App() {
       setGeneratedExcuse(res.data[0].excuse);
       console.log("fetching data");
     });
+  //   Axios.get("https://jsonplaceholder.typicode.com/comments").then((res)=>{
+  //       setGeneratedExcuse(res.data[0].email);
+  // });
   };
 
   return (
