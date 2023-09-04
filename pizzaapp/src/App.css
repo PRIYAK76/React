@@ -1,17 +1,5 @@
-.App {
-  width:100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-body{
-  padding: 0;
-  margin: 0;
+button{
+  color:aqua;
+  background-color:black;
 }
-/* .leftside{
-  width:100px;
-  height:100px;
-  background-color: black;
-} */

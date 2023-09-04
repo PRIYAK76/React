@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+textarea{
+  height:100px;
+  width:50vw;
+  font-size: 30px;
+}

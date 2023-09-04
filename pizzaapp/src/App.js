@@ -1,25 +1,26 @@
+import { useState } from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer";
-import Home from "./pages/Home";
-// import Menu from "./pages/Menu";
-// import About from "./pages/About";
-// import Contact from "./pages/Contact";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
+  const [disp,setDisp]=useState(true);
+  const [num,setNum]=useState([]);
+  const [newNum,setNewnum]=useState();
+  const addNumber=(e)=>{
+    setNewnum(e.target.value);
+  }
+  const displaynumbers=()=>{
+    setNum([...num,newNum]);
+  }
   return (
     <div className="App">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" exact component={Home} />
-          {/* <Route path="/menu" exact component={Menu} />
-          <Route path="/about" exact component={About} />
-          <Route path="/contact" exact component={Contact} /> */}
-        </Routes>
-        {/* <Footer /> */}
-      </Router>
+      <button onClick={()=>setDisp(!disp)}>Click me</button>
+      {disp && <h1>Hello Welcome</h1>}
+      <input type="text" placeholder="Enter numbers" onChange={addNumber}></input>
+      <button onClick={displaynumbers}>Add</button>
+      {num.map((i)=>{
+          return( <h1>{i}</h1>)
+        })
+      }
     </div>
   );
 }
