@@ -1,22 +1,29 @@
-import { useState } from 'react';
 import './App.css';
+import { First1 } from "./excercises/first";
+import { Second } from './excercises/second';
+import { Third } from './excercises/third';
+import { Fourth } from './excercises/four';
+import { Fifth } from './excercises/fifth';
 
 function App() {
   
-  const [count,setCount]=useState(50);
-  let diff=50-count.length;
-  if(diff<21){
-    style={color:"red"}
-  }
-  const updateCounter=(e)=>{
-    setCount(e.target.value);
-  }
   return (
     <div className="App">
-     <h1>Excercise 1:</h1>
-     <h1>Twitter - Character Counter</h1>
-     <textarea type="text" value={count} onChange={updateCounter}></textarea>
-     <h1>{diff}/50</h1>
+     <div>
+      <First1 />
+     </div>
+     <div>
+      <Second />
+     </div>
+     <div>
+      <Third />
+     </div>
+     <div>
+      <Fourth />
+     </div>
+     <div>
+      <Fifth/>
+     </div>
     </div>
   );
 }
