@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const First1 =()=>{
-    const [count,setCount]=useState(50);
+    const [count,setCount]=useState("");
     const charCounter=()=>{
     let countcolor = "black";
     let diff=50-count.length;
