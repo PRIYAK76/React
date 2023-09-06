@@ -128,3 +128,38 @@ fetching data from API
   fetch("https://catfact.ninja/fact").then((res) => res.json()).then((data)=>{
   console.log(data);
 });
+
+
+
+USEEFFECT
+
+component lifecycle
+first --> added or mounted 
+updated
+third --> removed or unmounted
+
+use effect will run when the component mounted or when state changes
+
+we can add dependencies to use effect 
+by adding it the useeffect will be called depending on dependencies 
+
+else empty array will be called only once in a program
+
+
+useEffect(()=>{
+
+},[]);
+
+
+
+USECONTEXT 
+
+share data without paassing props
+
+USEREF
+	this is mutable value
+value won't change on re-rendering
+most important duty is to fetch elements from dom
+
+this persist the value betweeen renders
+
