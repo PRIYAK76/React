@@ -9,6 +9,8 @@ function App() {
   function focus(){
     myRef.current.focus();
   }
+
+  
   return (
     <div className="App">
       <input  ref={myRef}value={name} onChange={(e)=>setName(e.target.value)}/>
