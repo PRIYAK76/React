@@ -1,14 +1,18 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
+import { userSlice } from '../features/user';
 
-function profile() {
+function Profile() {
+  const user=useSelector((state) => state.user.value);
   return (
     <div>
       <h1>Profile Page</h1>
-      <p>Name:</p>
-      <p>Age:</p>
-      <p>Email:</p>
+      <p>Name:{user.name}</p>
+      <p>Age:{user.age}</p>
+      <p>Email:{user.email}</p>
     </div>
   );
 }
 
-export default profile
+export const {login} = userSlice.actions
+export default Profile;
