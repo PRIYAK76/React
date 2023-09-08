@@ -154,7 +154,7 @@ useEffect(()=>{
 
 USECONTEXT 
 
-share data without paassing props
+share data without passing props
 
 USEREF
 	this is mutable value
@@ -163,3 +163,13 @@ most important duty is to fetch elements from dom
 
 this persist the value betweeen renders
 
+HOOKS
+useState-->returns a pair the current state value and a function that lets you update it.
+
+useEffect-->adds the ability to perform side effects from a function components
+serves same as componentDidMount,componentDidUpdate,componentWillUnmount
+
+two arguments second one is optional 
+dependency
+
+useContext--> this is used to share state between deeply nested components
