@@ -173,3 +173,9 @@ two arguments second one is optional
 dependency
 
 useContext--> this is used to share state between deeply nested components
+
+
+useState-->When you update multiple state in a single function
+
+** when two are more states change together then its better to use usseReducer
+
