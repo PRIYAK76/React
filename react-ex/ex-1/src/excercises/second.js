@@ -5,8 +5,8 @@ export const Second =()=>{
     const [pass,setPass]=useState("");
     const [repass,setRePass]=useState("");
 
-    const password=(e)=>{
-        setPass(e.target.value);
+    const password=(e1)=>{
+        setPass(e1.target.value);
     }
     const repassword=(e1)=>{
         setRePass(e1.target.value);
