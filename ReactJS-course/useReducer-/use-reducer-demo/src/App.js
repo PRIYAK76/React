@@ -2,7 +2,7 @@ import './App.css';
 import React,{useState,useReducer} from 'react';
 
 function App() {
-  // const []=useReducer()
+  const []=useReducer(reducer,{count:0})
   const [count,setCount]=useState(0);
   return (
     <div className="App">
