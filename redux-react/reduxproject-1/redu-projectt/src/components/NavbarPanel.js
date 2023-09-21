@@ -8,7 +8,7 @@ import {useSelector} from 'react-redux';
 const NavBar = ()=> {
   const cartProducts = useSelector(state=>state.cart);
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary ">
         <Container fluid>
             <Navbar.Brand href="#">Redux toolkit</Navbar.Brand>
             <Nav>
