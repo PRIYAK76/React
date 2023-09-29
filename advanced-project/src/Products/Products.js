@@ -1,13 +1,16 @@
+
 import './Products.css';
 
+import Card from '../components/Card';
+
 function Products() {
-  return (
-    <div>
-      <h1>
-        Products
-      </h1>
-    </div>
-  )
+  return(
+     <>
+    <section className='card-container'>
+      <Card/>
+    </section>
+  </>
+  );
 }
 
 export default Products
