@@ -5,3 +5,6 @@
 .all{
     background: linear-gradient(blue,crimson);
 }
+.mtt{
+  margin-left: -30px;
+}

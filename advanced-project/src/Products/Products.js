@@ -1,16 +1,11 @@
+import "../../src/Products/Products.css";
 
-import './Products.css';
-
-import Card from '../components/Card';
-
-function Products() {
-  return(
-     <>
-    <section className='card-container'>
-      <Card/>
-    </section>
-  </>
+const Products = ({ result }) => {
+  return (
+    <>
+      <section className="card-container">{result}</section>
+    </>
   );
-}
+};
 
-export default Products
+export default Products;
