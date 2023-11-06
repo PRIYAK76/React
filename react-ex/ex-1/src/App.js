@@ -3,13 +3,13 @@ import { First1 } from "./excercises/first";
 import { Second } from './excercises/second';
 import { Third } from './excercises/third';
 import { Fourth } from './excercises/four';
-import { Fifth } from './excercises/fifth';
+import Pw  from './excercises/pw';
 
 function App() {
   
   return (
     <div className="App">
-     <div>
+     {/* <div>
       <First1 />
      </div>
      <div>
@@ -20,9 +20,9 @@ function App() {
      </div>
      <div>
       <Fourth />
-     </div>
+     </div> */}
      <div>
-      <Fifth/>
+      <Pw/>
      </div>
     </div>
   );

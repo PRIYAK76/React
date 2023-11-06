@@ -43,8 +43,9 @@ Vertical.args = {
 
 export const NoSpacing = Template.bind({})
 NoSpacing.args = {
+    numberOfChildren: 20,
     direction: "row",
-    spacing: 0,
+    spacing: 7,
     wrap: false,
 }
 
@@ -60,6 +61,14 @@ export const Empty = Template.bind({})
 Empty.args = {
     numberOfChildren: 0,
     direction: "row",
+    spacing: 2,
+    wrap: true,
+}
+
+export const Ntg = Template.bind({})
+Ntg.args = {
+    numberOfChildren: 40,
+    direction: "column",
     spacing: 2,
     wrap: true,
 }

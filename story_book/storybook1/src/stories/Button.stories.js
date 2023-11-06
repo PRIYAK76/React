@@ -1,44 +1,45 @@
-import Button from "../components/Button";
+import { Button } from './Button';
 
+// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Components/Button",
-  component:Button,
-  argTypes: {handleClick : {action : "handleClick"}},
-}
+  title: 'Example/Button',
+  component: Button,
+  parameters: {
+    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
+    layout: 'centered',
+  },
+  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
+  tags: ['autodocs'],
+  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+};
 
-const Template = args => <Button {...args} />
+// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
+export const Primary = {
+  args: {
+    primary: true,
+    label: 'Button',
+  },
+};
 
-export const Red = Template.bind({})
-Red.args = {
-  backgroundColor: "red",
-  label: "Press Me",
-  size: "md",
-}
+export const Secondary = {
+  args: {
+    label: 'Button',
+  },
+};
 
-export const Green = Template.bind({})
-Green.args = {
-  backgroundColor: "green",
-  label: "Press Me",
-  size: "md",
-}
+export const Large = {
+  args: {
+    size: 'large',
+    label: 'Button',
+  },
+};
 
-export const Small = Template.bind({})
-Small.args = {
-  backgroundColor: "red",
-  label: "Press Me",
-  size: "sm",
-}
-
-export const Large = Template.bind({})
-Large.args = {
-  backgroundColor: "red",
-  label: "Press Me",
-  size: "lg",
-}
-
-export const LongLabel = Template.bind({})
-LongLabel.args = {
-  backgroundColor: "red",
-  label: "Press Me gfdkhg uhguihgui uighsuihui seuihrfui ",
-  size: "md",
-}
+export const Small = {
+  args: {
+    size: 'small',
+    label: 'Buttonsm',
+  },
+};
