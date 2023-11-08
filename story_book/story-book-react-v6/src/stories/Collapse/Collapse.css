@@ -1,0 +1,11 @@
+.anime{
+    animation-name: animatetop;
+  animation-duration: 0.4s;
+  transition: all .5s ease-in-out;
+  
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:140; opacity:1}
+  }
