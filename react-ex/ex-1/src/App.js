@@ -9,7 +9,7 @@ function App() {
   
   return (
     <div className="App">
-     {/* <div>
+     <div>
       <First1 />
      </div>
      <div>
@@ -20,7 +20,7 @@ function App() {
      </div>
      <div>
       <Fourth />
-     </div> */}
+     </div>
      <div>
       <Pw/>
      </div>
