@@ -6,8 +6,6 @@ DOM --> document object model
 react is JS library used for creating UI 
 
 
-
-
 react process for installing 
 
 
