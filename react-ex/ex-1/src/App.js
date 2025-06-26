@@ -6,7 +6,6 @@ import { Fourth } from './excercises/four';
 import Pw  from './excercises/pw';
 
 function App() {
-  
   return (
     <div className="App">
      <div>
