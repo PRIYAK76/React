@@ -4,7 +4,6 @@ import { Second } from './excercises/second';
 import { Third } from './excercises/third';
 import { Fourth } from './excercises/four';
 import Pw  from './excercises/pw';
-
 function App() {
   return (
     <div className="App">
